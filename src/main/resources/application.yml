@@ -11,4 +11,4 @@ spring:
     username: root
     password: root
 mybatis:
-  type-aliases-package: com.mailplug.homework.vo
+  type-aliases-package: com.mailplug.homework.kwonbomiproject.vo
