@@ -19,8 +19,8 @@
 </head>
 <body>
 
-	<section>
-		<div>
+	<section class="text-2xl">
+		<div class="container mx-auto px-3">
 			<h1>${pageTitle }</h1>
 		</div>
 	</section>

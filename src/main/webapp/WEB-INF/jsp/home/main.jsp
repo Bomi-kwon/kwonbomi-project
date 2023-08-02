@@ -4,7 +4,7 @@
 <c:set var="pageTitle" value="Main" />
 <%@ include file="../common/head.jsp" %>
 
-	<div>
+	<div class="text-xl">
 		<span>안녕하세용!!</span>
 	</div>
 

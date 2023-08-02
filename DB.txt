@@ -1,0 +1,29 @@
+# kwonbomi-project 데이터베이스 삭제,생성,사용
+DROP DATABASE IF EXISTS `kwonbomi-project`;
+CREATE DATABASE `kwonbomi-project`;
+USE `kwonbomi-project`;
+
+# article 테이블 생성
+CREATE TABLE article(
+    id INT UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(300) NOT NULL,
+    `body` TEXT NOT NULL,
+    create_at DATETIME NOT NULL,
+    update_at DATETIME NOT NULL,
+    writerID INT UNSIGNED NOT NULL,
+    boardID INT UNSIGNED NOT NULL,
+    hit INT UNSIGNED NOT NULL DEFAULT 0
+);
+# article 테이블 구조 확인
+DESC article;
+
+# article 테이블 데이터 넣기
+INSERT INTO article (title, `body`, create_at, update_at, writerID, boardID) VALUES
+('당근을 흔들어주세요', '반갑습니다~!!', NOW(), NOW(), 1, 1),
+('안녕하세요~!', '반갑습니다~~~!!!', NOW(), NOW(), 2, 1),
+('메일플러그에 오신 걸 환영합니다', '반갑습니다~!!', NOW(), NOW(), 1, 1);
+
+# article 테이블 데이터 조회
+SELECT * FROM article;
+
+
